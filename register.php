@@ -1,4 +1,4 @@
-<?phphej
+<?php
 $locker = 1;
 include_once('config/db.php');
  
