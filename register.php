@@ -30,7 +30,6 @@ if (isset($_POST['register'])){
     }else if($execute->num_rows == 1){
         $errorMsg = "Denna email finns redan";
     }else{
-        
         $query = "INSERT INTO $tableAdmin (uniqueid, first_name, last_name, email, password, role) VALUES 
         ('$uniqueid', '$firstname', '$lastname', '$email', '$password', '$role')";
 
@@ -41,9 +40,7 @@ if (isset($_POST['register'])){
         }else{
             $errorMsg = "Du är inte registrerad, försök igen.";
         }
-
     }
-
 }
 
 ?>
